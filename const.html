@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+     let persons={
+        firstname1:"heba",
+        firstname2:"hala",
+        firstname3:"hadeel",
+        firstname4:"abd",
+       
+
+      }
+      function firstname(persons)
+      {
+        return Object.values(persons)
+      }
+      //console.log("Object values:", Object.values(persons));
+      console.log(firstname(persons));
+
+       function personDetalis(firstname,age)
+       {
+        this.firstname=firstname;
+        this.age=age;
+       }
+       const detal=new personDetalis("HEBA",24);
+       console.log(detal);
+
+    //  function persons (firstname,lastname){
+    //     this.firstname=firstname;
+    //     this.lastname=lastname;
+    //     return firstname;
+
+    //   }
+      
+    //  let person1 = new persons("heba", "m3itah");
+    //  let person2 = new persons("hala", "m3itah");
+    //  let person3 = new persons("hadeel", "m3itah");
+    //  let person4 = new persons("mohamed", "m3itah");
+    //  let person5 = new persons("abd", "m3itah");
+     
+    //  console.log("Object Keys:", Object.keys(personsCreate)); 
+
+
+    function Car(brand, model, year) {
+            this.brand = brand;
+            this.model = model;
+            this.year = year;
+            this. getDetails=function() {
+              return `brand: ${this.brand}  ,model:${this.model} ,year:${this.year}`
+                
+            }
+
+        }
+
+        let car1 = new Car("Toyota", "Corolla", 2020);
+        let car2 = new Car("Honda" , "Civic"   , 2021);
+        let car3 = new Car("bmw"   , " model 3", 2019);
+
+        let output=[car1,car2,car3];
+
+        for(let i=0;i<3;i++){
+           console.log(output[i].getDetails());
+
+        }
+
+        
+
+        
+    </script>
+</body>
+</html>
